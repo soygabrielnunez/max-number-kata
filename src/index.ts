@@ -1,10 +1,9 @@
-export function getMaxNumberFrom (numbers) {
+export function getMaxNumberFrom (numbers: Array<number>): number {
   let maxNumber = 0
-  let size = numbers.length
-  for(let i = 0; i < size; i++) {
-    if(maxNumber < numbers[i]) {
-      maxNumber = numbers[i]
+  numbers.forEach(number => {
+    if(maxNumber < number) {
+      maxNumber = number
     }
-  }
+  })
   return maxNumber
 }
