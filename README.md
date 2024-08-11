@@ -1,0 +1,1 @@
+The goal of this project is to provide a template for typescript katas.
